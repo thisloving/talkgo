@@ -2,7 +2,8 @@
 
 ## 实验环境:
 
-```[leving@izbp1goz1ulmtus2vec80fz talkgo]$ lsb_release -a
+```
+[root@izbp1goz1ulmtus2vec80fz tools]# lsb_release -a
 LSB Version:	:core-4.1-amd64:core-4.1-noarch
 Distributor ID:	CentOS
 Description:	CentOS Linux release 7.6.1810 (Core) 
@@ -10,7 +11,8 @@ Release:	7.6.1810
 Codename:	Core
 ```
 
-```[leving@izbp1goz1ulmtus2vec80fz talkgo]$ lscpu
+```
+[root@izbp1goz1ulmtus2vec80fz tools]# lscpu
 Architecture:          x86_64
 CPU op-mode(s):        32-bit, 64-bit
 Byte Order:            Little Endian
@@ -26,7 +28,8 @@ Model:                 85
 Model name:            Intel(R) Xeon(R) Platinum 8163 CPU @ 2.50GHz
 ```
 
-```[leving@izbp1goz1ulmtus2vec80fz talkgo]$ cat /proc/meminfo 
+```
+[root@izbp1goz1ulmtus2vec80fz tools]# cat /proc/meminfo
 MemTotal:        1883492 kB
 MemFree:          133404 kB
 MemAvailable:    1511232 kB
@@ -192,5 +195,5 @@ Linux 3.10.0-693.2.2.el7.x86_64 (izbp1goz1ulmtus2vec80fz) 	05/28/2020 	_x86_64_	
 
 ## 总结
 
-​		 知道平均负载定义，查看平均负载的指令，根据各种情形查看导致负载升高的原因。
+​		了解了平均负载定义，以及查看平均负载的指令，根据各种情形查看导致负载升高的原因。
 
