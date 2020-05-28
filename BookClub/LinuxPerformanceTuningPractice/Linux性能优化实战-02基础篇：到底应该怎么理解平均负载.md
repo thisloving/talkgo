@@ -1,6 +1,6 @@
 
 
-##实验环境:
+## 实验环境:
 
 ```[leving@izbp1goz1ulmtus2vec80fz talkgo]$ lsb_release -a
 LSB Version:	:core-4.1-amd64:core-4.1-noarch
@@ -36,7 +36,7 @@ Cached:          1234660 kB
 
 ## 平均负载
 
-###定义：
+### 定义：
 
 ```
 平均负载是指单位时间内，系统处于可运行状态和不可中断状态的平均进程数，也就是平均活跃进程数。
@@ -46,7 +46,7 @@ Cached:          1234660 kB
 
 延伸知识：
 
-###进程状态
+### 进程状态
 
 - R(Running or Runable): 进程在就绪队列中,正在运行或者正在等待CPU资源运行
 - D(Disk Sleep): 不可中断状态睡眠(Uninterruptible Sleep),表示进程正在和硬件交互,且交互过程不允许被其他进程或者中断打断
@@ -55,7 +55,7 @@ Cached:          1234660 kB
 - I(Idle): 空闲状态
 - T(Stooped, Traced): 暂停或者跟踪状态
 
-###查看系统平均负载：
+### 查看系统平均负载：
 
 ```
 [leving@izbp1goz1ulmtus2vec80fz talkgo]$ uptime
@@ -76,7 +76,7 @@ mpstat -P ALL 5 : -P ALL表示监控所有CPU，5表示每5秒刷新一次数据
 
 pidstat -u 5 1：每5秒输出一组数据，观察哪个进程%cpu很高
 
-####场景一：CPU 密集型进程
+#### 场景一：CPU 密集型进程
 
 ```
 [leving@izbp1goz1ulmtus2vec80fz talkgo]$ stress --cpu 1 --timeout 600
@@ -118,7 +118,7 @@ Linux 3.10.0-693.2.2.el7.x86_64 (izbp1goz1ulmtus2vec80fz) 	05/28/2020 	_x86_64_	
 
 综上结果，cpu繁忙导致评价负载升高。另外，htop也可以动态观察cpu负载情况。
 
-####场景二：I/O 密集型进程
+#### 场景二：I/O 密集型进程
 
 ```
 // 模拟 I/O 压力
@@ -158,7 +158,7 @@ Linux 3.10.0-693.2.2.el7.x86_64 (izbp1goz1ulmtus2vec80fz) 	05/28/2020 	_x86_64_	
 
 综上结果，是stress-ng导致的平均负载过高。
 
-####场景三：大量进程的场景
+#### 场景三：大量进程的场景
 
 ```
 //模拟 8 个进程
@@ -190,6 +190,7 @@ Linux 3.10.0-693.2.2.el7.x86_64 (izbp1goz1ulmtus2vec80fz) 	05/28/2020 	_x86_64_	
 02:02:20 PM     0     30675    9.62    0.00    0.00    9.62     0  stress
 ```
 
-###总结
+## 总结
 
 ​		 知道平均负载定义，查看平均负载的指令，根据各种情形查看导致负载升高的原因。
+
