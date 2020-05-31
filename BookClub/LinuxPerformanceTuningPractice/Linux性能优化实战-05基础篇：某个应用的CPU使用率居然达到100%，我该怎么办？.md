@@ -145,7 +145,9 @@ Tasks:  92 total,   1 running,  91 sleeping,   0 stopped,   0 zombie
 KiB Mem :  1883492 total,   514232 free,   250328 used,  1118932 buff/cache
 KiB Swap:        0 total,        0 free,        0 used.  1425380 avail Mem 
 
-PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                 25133 root      20   0  138800  16604   2420 S 91.0  0.9   0:14.77 web 
+PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                 
+
+25133 root      20   0  138800  16604   2420 S 91.0  0.9   0:14.77 web 
 ```
 
 从上面实现可以看到，top或者htop可以清楚的看见是web这个进程导致cpu占用过高，接下来想知道是哪个函数导致cpu占用过高？
